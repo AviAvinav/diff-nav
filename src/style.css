@@ -22,9 +22,10 @@
 }
 
 #ele {
-  display: flex;
+  display: none;
   flex-direction: column;
   height: 100%;
+  transition: all 0.5s ease-in-out;
 }
 
 button {
@@ -37,7 +38,7 @@ button {
   margin-top: 30px;
 }
 
-#bur {
+#cross {
   display: none;
 }
 
@@ -57,4 +58,52 @@ svg {
 
 #app {
   height: 200vh;
+}
+
+nav {
+  z-index: 100;
+}
+
+nav > #leftnav {
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+}
+
+@media (max-width: 768px) {
+  #leftnav {
+    left: 20px;
+    bottom: 20px;
+    top: auto;
+    padding: 0.5rem 1rem;
+  }
+
+  #bur,
+  #cross {
+    display: none;
+  }
+
+  #ele {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #ele > button {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+
+  #ele > button:first-child {
+    margin-left: 0;
+  }
+
+  #rightnav {
+    right: 20px;
+    top: auto;
+    bottom: 20px;
+    padding: 0.5rem;
+  }
+
+  svg {
+    width: 30px;
+    height: 30px;
+  }
 }
