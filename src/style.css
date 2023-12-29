@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+#leftnav {
+  background-color: #ffffff;
+  position: fixed;
+  padding: 1rem;
+  left: 40px;
+  top: 40px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#ele {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+button {
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+#ele > button {
+  margin-top: 30px;
+}
+
+#bur {
+  display: none;
+}
+
+#rightnav {
+  background-color: #ffffff;
+  padding: 1rem;
+  position: fixed;
+  right: 40px;
+  border-radius: 50px;
+  top: 40px;
+}
+
+svg {
+  width: 35px;
+  height: 35px;
+}
+
+#app {
+  height: 200vh;
+}
